@@ -7,3 +7,7 @@ fi
 
 # User specific aliases and functions
 stty stop undef
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+    export WORKON_HOME=/home/ansible/.virtualenvs
+    source /usr/local/bin/virtualenvwrapper.sh
+fi

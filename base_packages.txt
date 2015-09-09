@@ -1,0 +1,5 @@
+# よく使うパッケージ
+yum install vim-common vim-enhanced readline-devel openssl-devel ncurses-devel zlib-devel nkf openssh-clients libxslt-devel gcc glib-devel m4 autoconf make bind-utils expat-devel gettext-devel libcurl-devel
+
+# gitのコンパイルに必要
+yum install perl-ExtUtils-MakeMaker

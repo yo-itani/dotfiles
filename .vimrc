@@ -27,6 +27,7 @@ if 1
     set autoindent
     set listchars=tab:>-,trail:-,nbsp:%,extends:>,precedes:<
     set backspace=start,eol,indent
+    set expandtab
     autocmd FileType python setl tabstop=8 expandtab shiftwidth=4 softtabstop=4
     autocmd BufNewFile *.py 0r $HOME/.vim/template/python.txt
     set fileencodings=utf-8,cp932,sjis,iso-2022-jp,euc-jp

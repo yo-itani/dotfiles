@@ -1,2 +1,10 @@
 # bashのcache(path)をリセット
 hash -r
+
+# 隠しディレクトリ以外をfind
+find . -type d -not -path '*/\.*'
+
+# homeディレクトリ以下をapacheがアクセスできるように変更
+find /home/laravel -type d -not -path '*/\.*' -exec chown laravel.apache {} \;
+find /home/laravel -type d -not -path '*/\.*' -exec chmod 2775 {} \;
+

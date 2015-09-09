@@ -7,7 +7,8 @@ fi
 
 # User specific aliases and functions
 stty stop undef
-if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
-    export WORKON_HOME=$HOME/.virtualenvs
-    source /usr/local/bin/virtualenvwrapper.sh
-fi
+# virtualenvwrapperを使うときはコメントを外す
+#if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+#    export WORKON_HOME=$HOME/.virtualenvs
+#    source /usr/local/bin/virtualenvwrapper.sh
+#fi

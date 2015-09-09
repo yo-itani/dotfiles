@@ -43,6 +43,10 @@ create_symlink() {
 }
 
 SCRIPTDIR="$(cd $(dirname $0) && pwd)"
+VUNDLEDIR="$SCRIPTDIR/.vim/bundle/Vundle.vim"
+if ! [ -e "$VUNDLEDIR" ]; then
+    git clone https://github.com/VundleVim/Vundle.vim.git $VUNDLEDIR
+fi
 create_symlink "$SCRIPTDIR/.bashrc" ~/.bashrc
 create_symlink "$SCRIPTDIR/.vim" ~/.vim
 create_symlink "$SCRIPTDIR/.vimrc" ~/.vimrc

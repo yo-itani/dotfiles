@@ -5,10 +5,10 @@ if 1
     syntax on
     set t_Co=256
     set nocompatible
-    set rtp+=~/.vim/bundle/vundle/
+    set rtp+=~/.vim/bundle/Vundle.vim/
     filetype off
     call vundle#rc()
-    Bundle 'gmarik/vundle'
+    Bundle 'VundleVim/Vundle.vim'
     Bundle 'thinca/vim-quickrun'
     Bundle 'tpope/vim-surround'
     "Bundle 'davidhalter/jedi-vim'

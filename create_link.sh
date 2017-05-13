@@ -47,6 +47,7 @@ VUNDLEDIR="$SCRIPTDIR/.vim/bundle/Vundle.vim"
 if ! [ -e "$VUNDLEDIR" ]; then
     git clone https://github.com/VundleVim/Vundle.vim.git $VUNDLEDIR
 fi
-create_symlink "$SCRIPTDIR/.bashrc" ~/.bashrc
+# .bashrcのシンボリックリンク化をやめる
+# create_symlink "$SCRIPTDIR/.bashrc" ~/.bashrc
 create_symlink "$SCRIPTDIR/.vim" ~/.vim
 create_symlink "$SCRIPTDIR/.vimrc" ~/.vimrc

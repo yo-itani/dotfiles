@@ -36,6 +36,7 @@ if 1
     autocmd FileType css setl tabstop=8 expandtab shiftwidth=2 softtabstop=2
     autocmd BufNewFile *.py 0r $HOME/.vim/template/python.txt
     autocmd BufNewFile index.html 0r $HOME/.vim/template/html.txt
+    autocmd BufNewFile .gitignore 0r $HOME/.vim/template/gitignore.txt
     set fileencodings=utf-8,cp932,sjis,iso-2022-jp,euc-jp
     let g:quickrun_config={'*':{'split': ''}}
     set ruler

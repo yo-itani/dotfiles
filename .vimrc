@@ -20,6 +20,7 @@ if 1
     Bundle 'tpope/vim-fugitive'
     Bundle 'plasticboy/vim-markdown'
     Bundle 'mattn/emmet-vim'
+    Bundle 'posva/vim-vue'
     filetype on
     colorscheme molokai
     set tabstop=4
@@ -32,7 +33,7 @@ if 1
     autocmd FileType python setl tabstop=8 expandtab shiftwidth=4 softtabstop=4
     autocmd FileType yaml setl tabstop=8 expandtab shiftwidth=2 softtabstop=2
     autocmd FileType html setl tabstop=8 expandtab shiftwidth=2 softtabstop=2 autoindent
-    autocmd FileType javascript setl tabstop=8 expandtab shiftwidth=2 softtabstop=2 autoindent
+    "autocmd FileType javascript setl tabstop=8 expandtab shiftwidth=2 softtabstop=2 autoindent
     autocmd FileType css setl tabstop=8 expandtab shiftwidth=2 softtabstop=2
     autocmd BufNewFile *.py 0r $HOME/.vim/template/python.txt
     autocmd BufNewFile index.html 0r $HOME/.vim/template/html.txt
